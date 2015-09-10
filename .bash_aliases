@@ -8,6 +8,9 @@ alias path='echo -e ${PATH//:/\\n}'
 #run the program I just compiled with gcc
 alias a='./a.out'
 
+# source ~/.bashrc
+alias s='source ~/.bashrc'
+
 # aliases for uploading webpages to host
 alias f3='ftp -u ftp://mybodymgr:tester7G@mybodynatural.com/httpdocs/developing/blog/my-strawberry-wall-is-growing.php my-strawberry-wall-is-growing.php'
 alias f2='ftp -u ftp://mybodymgr:tester7G@mybodynatural.com/httpdocs/developing/blog/hail-bacon.php hail-bacon.php'
