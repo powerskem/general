@@ -5,7 +5,8 @@ alias ltr='ls -ltr'
 alias h='history'
 alias path='echo -e ${PATH//:/\\n}'
 
-#run the program I just compiled with gcc
+#compiling with gcc
+alias g='gcc temp.c'
 alias a='./a.out'
 
 # source ~/.bashrc
