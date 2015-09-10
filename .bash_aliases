@@ -1,5 +1,6 @@
 # common aliases
 alias ll='ls -al'
+alias ltr='ls -ltr'
 alias h='history'
 
 # aliases for uploading webpages to host
