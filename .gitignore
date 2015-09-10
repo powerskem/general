@@ -26,8 +26,12 @@ Sites/
 VirtualBox\ VMs/
 
 # home dir files
+.bash_history
 .CFUserTextEncoding
 .DS_Store
+.gitconfig
+.lesshst
+.rnd
 .viminfo
 .Xauthority
 
