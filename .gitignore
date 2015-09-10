@@ -9,6 +9,7 @@
 .ssh/
 .wapi/
 .wireshark/
+.wireshark-etc/
 Applications/
 Desktop/
 Documents/
@@ -21,7 +22,7 @@ NetBeansProjects/
 Pictures/
 Public/
 Sites/
-Trash/
+.Trash/
 VirtualBox\ VMs/
 
 
