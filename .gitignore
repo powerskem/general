@@ -1,0 +1,16 @@
+# home dir folders
+.cache/
+.config/
+.cups/
+.fontconfig/
+.jssc/
+.local/
+.oracle_jre_usage/
+.ssh/
+.wapi/
+.wireshark/
+Applications/
+Desktop/
+Documents/
+Downloads/
+
