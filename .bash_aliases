@@ -1,7 +1,6 @@
 # common aliases
 alias ll='ls -al'
-alias la='ls -a'
-alias ltr='ls -ltr'
+alias l='ls -ltr'
 alias h='history'
 alias path='echo -e ${PATH//:/\\n}'
 
