@@ -2,6 +2,7 @@
 alias ll='ls -al'
 alias ltr='ls -ltr'
 alias h='history'
+alias path='echo -e ${PATH//:/\\n}'
 
 # aliases for uploading webpages to host
 alias f3='ftp -u ftp://mybodymgr:tester7G@mybodynatural.com/httpdocs/developing/blog/my-strawberry-wall-is-growing.php my-strawberry-wall-is-growing.php'
