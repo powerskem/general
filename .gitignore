@@ -25,4 +25,9 @@ Sites/
 .Trash/
 VirtualBox\ VMs/
 
+# home dir files
+.CFUserTextEncoding
+.DS_Store
+.viminfo
+.Xauthority
 
