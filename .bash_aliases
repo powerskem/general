@@ -1,8 +1,12 @@
 # common aliases
 alias ll='ls -al'
+alias la='ls -a'
 alias ltr='ls -ltr'
 alias h='history'
 alias path='echo -e ${PATH//:/\\n}'
+
+#run the program I just compiled with gcc
+alias a='./a.out'
 
 # aliases for uploading webpages to host
 alias f3='ftp -u ftp://mybodymgr:tester7G@mybodynatural.com/httpdocs/developing/blog/my-strawberry-wall-is-growing.php my-strawberry-wall-is-growing.php'
