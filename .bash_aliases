@@ -6,6 +6,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 #compiling with gcc
 alias g='gcc temp.c'
+alias gb='gcc -D DEBUG temp.c'
 alias a='./a.out'
 
 # source ~/.bashrc
