@@ -4,3 +4,8 @@ hname=`hostname`
 echo "Welcome on $hname."
 
 export PATH=/usr/local/bin:$PATH
+
+echo -e "Kernel Details: " `uname -smr`
+echo -e "`bash --version`"
+echo -ne "Uptime: "; uptime
+echo -ne "Server time : "; date
