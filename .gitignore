@@ -32,6 +32,7 @@ VirtualBox\ VMs/
 .DS_Store
 .gitconfig
 .lesshst
+.netrc
 .rnd
 .viminfo
 .Xauthority
