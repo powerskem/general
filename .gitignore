@@ -5,6 +5,7 @@
 .fontconfig/
 .jssc/
 .local/
+.npm/
 .oracle_jre_usage/
 .ssh/
 .wapi/
@@ -28,12 +29,14 @@ VirtualBox\ VMs/
 
 # home dir files
 .bash_history
+.bash_logout
 .CFUserTextEncoding
 .DS_Store
 .gitconfig
 .lesshst
 .netrc
 .rnd
+.vbox_version
 .viminfo
 .Xauthority
 
