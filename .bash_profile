@@ -1,3 +1,17 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+
+
 #  from http://www.thegeekstuff.com/2010/03/introduction-to-bash-scripting/...
 #  "...when the bash is invoked as an interactive shell, it first reads and executes commands from /etc/profile. If /etc/profile doesn’t exist, it reads and executes the commands from ~/.bash_profile, ~/.bash_login and ~/.profile in the given order."
 hname=`hostname`
