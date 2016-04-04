@@ -1,8 +1,14 @@
 # common aliases
+alias h='history'
+alias l.='ls -d .* --color=auto'
 alias ll='ls -al'
 alias l='ls -ltr'
 alias h='history'
 alias path='echo -e ${PATH//:/\\n}'
+
+#alias ls='ls --color=auto'
+#alias path='echo -e ${PATH//:/\\n}'
+#alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
 
 #compiling with gcc
 alias g='gcc temp.c'
