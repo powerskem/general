@@ -32,6 +32,8 @@ VirtualBox\ VMs/
 .bash_logout
 .CFUserTextEncoding
 .DS_Store
+.git-credentials
+.gitconfig
 .lesshst
 .netrc
 .rnd
