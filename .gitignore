@@ -2,12 +2,16 @@
 .cache/
 .config/
 .cups/
+.dbus-keyrings/
+.dbus/
 .fontconfig/
 .jssc/
 .local/
 .npm/
 .oracle_jre_usage/
 .ssh/
+.Trash/
+.vim/
 .wapi/
 .wireshark/
 .wireshark-etc/
@@ -24,7 +28,6 @@ NetBeansProjects/
 Pictures/
 Public/
 Sites/
-.Trash/
 VirtualBox\ VMs/
 
 # home dir files
@@ -34,11 +37,15 @@ VirtualBox\ VMs/
 .DS_Store
 .git-credentials
 .gitconfig
+.ICEauthority
 .lesshst
+.minttyrc
+.mkshrc
 .netrc
 .psql_history
 .rnd
 .vbox_version
 .viminfo
 .Xauthority
+.xsession-errors
 
