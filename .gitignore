@@ -36,6 +36,7 @@ VirtualBox\ VMs/
 .gitconfig
 .lesshst
 .netrc
+.psql_history
 .rnd
 .vbox_version
 .viminfo
