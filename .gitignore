@@ -72,6 +72,9 @@ VirtualBox\ VMs/
 # vi history file
 .viminfo
 
+# link to .VirtualBox directory
+.VirtualBox
+
 # authentication file
 .Xauthority
 
