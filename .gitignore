@@ -1,4 +1,6 @@
-# home dir folders
+# --------------------------
+# DO NOT SAVE home dir folders
+# --------------------------
 .cache/
 .config/
 .cups/
@@ -30,22 +32,49 @@ Public/
 Sites/
 VirtualBox\ VMs/
 
-# home dir files
+# --------------------------
+# DO NOT SAVE home dir files
+# --------------------------
+
+# bash history file
 .bash_history
-.bash_logout
+
+# default text encoding and preferred language
 .CFUserTextEncoding
+
+# custom attributes of containing folder
 .DS_Store
+
+# .git-credentials (contains passwd)
 .git-credentials
+
+# .gitconfig (contains name and email info)
 .gitconfig
+
+# authentication file
 .ICEauthority
+
+# less history file
 .lesshst
-.minttyrc
-.mkshrc
+
+# automatic login information for the ftp and rexec commands (contains passwds)
 .netrc
+
+# postgreSQL history file
 .psql_history
+
+# random entropy file
 .rnd
+
+# other application support files
 .vbox_version
+
+# vi history file
 .viminfo
+
+# authentication file
 .Xauthority
+
+# log files
 .xsession-errors
 
