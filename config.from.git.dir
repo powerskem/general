@@ -1,0 +1,25 @@
+#
+# This file is a copy of .git/config
+#
+# This is the repository specific git config file.
+# A '#' or ';' character indicates a comment.
+#
+
+; core variables
+[core]
+	repositoryformatversion = 0
+	filemode = true ; trust file modes
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+
+[remote "origin"]
+	url = git@github.com:powerskem/general.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+
+[credential]
+	helper = store
