@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+# obtained from http://superuser.com/a/699281
+# attributed to user dotancohen
+
+cygstart --action=runas "$@"
+
