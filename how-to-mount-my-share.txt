@@ -1,0 +1,17 @@
+# HOW TO EASILY COPY FILES FROM A REMOTE WINDOWS SHARE:
+
+
+# ALREADY DID THIS
+#sudo yum install samba-client samba-common cifs-utils 
+
+# CREATE A MOUNT POINT
+sudo mkdir /mnt/username
+
+# MOUNT THE SHARE USING THE CIFS UTIL
+sudo mount -t cifs xxx.xxx.x.xxx:/mount_to_remote /mnt/username -o user=username
+
+# SEE THE CONTENT
+ls /mnt/username 
+
+# UNMOUNT WHEN DONE
+sudo umount /mnt/username 
