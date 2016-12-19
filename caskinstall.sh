@@ -6,9 +6,10 @@
 # Install Homebrew and Homebrew Cask
 # lifehacker.com/how-to-make-your-own-bulk-app-installer-for-os-x-1586252163
 
-echo "installing cask..."
+echo "installing homebrew..."
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-ruby -e "$(curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo "installing cask..."
 brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
 
