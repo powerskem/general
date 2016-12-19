@@ -3,6 +3,9 @@
 # caskconfig.sh
 #
 # (for MAC OSX) 
+#----------------------
+# NOTE: Make sure to install the Xcode Command Line Tools FIRST
+#----------------------
 
 # How to use cask:
 #brew cask # get a full list of commands
@@ -40,7 +43,6 @@ brew cask install google-chrome
 #brew cask install the-unarchiver
 
 #----------------------
-#TODO Add the Xcode Command Line Tools
 #TODO Add Firefox
 #----------------------
 
