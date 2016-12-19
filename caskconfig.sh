@@ -12,7 +12,12 @@
 #brew cask uninstall <app name>
 #brew cask cleanup # Cleanup and delete all downloaded files you no longer need
 
+echo "configuring install location = /Applications"
+brew cask --caskroom=/Applications
+
 # Install stuff
+echo "installing stuff..."
+
 #brew cask install quicksilver
 #brew cask install notational-velocity
 #brew cask install evernote
