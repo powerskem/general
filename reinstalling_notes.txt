@@ -1,0 +1,45 @@
+#
+# powerskem
+#
+# For new MAC OSX Installs:
+#
+# * sudo command requires a non-blank admin password
+#
+# * Fix trackpad options in System Preferences
+#
+# * Upgrade to Mountain Lion??
+#
+# * Install the Xcode Command Line Tools (from app store?)
+#   (I think I need a developer account)
+#
+# * Install git from http://git-scm.com/download/mac
+#
+# * Set git user-specific settings
+#   [Options set with the --global flag are stored in ~/.gitconfig]
+#   git config --global user.name <name>
+#   git config --global user.email <email>
+#   git config --global core.editor vim
+#
+# * Install Homebrew and Homebrew cask with
+#   ./caskinstall.sh
+#
+#----------------------
+#
+
+# go to existing dir where we will add clone
+cd $target_dir
+
+# OR...create new dir for cloned repo
+mkdir $target_dir
+cd $target_dir
+
+# Initialize the dir as a git dir
+git init
+
+# Clone from github
+#
+
+#.bashrc
+#.bash_aliases
+
+
