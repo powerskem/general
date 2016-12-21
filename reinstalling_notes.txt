@@ -3,14 +3,21 @@
 #
 # For new MAC OSX Installs:
 #
+# A note about using customized configurations - from http://hivelogic.com/articles/using_usr_local/
+# 1. In general, regardless of platform, software updates will respect the FHS’s designation of /usr/local as untouchable.)
+# 2. Compile Using --prefix=/usr/local on the ./configure command in the build process
+# 3. list /usr/local/bin first in the path
+# 4. Specify the /usr/local Prefix in Scripts
+#
+# * Install the Xcode Command Line Tools
+#   (need a developer account)
+#   help: https://wiki.helsinki.fi/display/HUGG/GNU+compiler+install+on+older+versions+of+Mac+OS+X
+#
 # * sudo command requires a non-blank admin password
 #
 # * Fix trackpad options in System Preferences
 #
 # * Upgrade to Mountain Lion??
-#
-# * Install the Xcode Command Line Tools (from app store?)
-#   (I think I need a developer account)
 #
 # * Install git from http://git-scm.com/download/mac
 #
