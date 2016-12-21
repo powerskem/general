@@ -27,6 +27,8 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
+source ~/.winshowadmin
+
 # User dependent .bashrc file
 
 # If not running interactively, don't do anything
