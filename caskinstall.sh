@@ -11,7 +11,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 echo "installing cask..."
 brew tap caskroom/cask
-brew install caskroom/cask/brew-cask
+#brew install caskroom/cask/brew-cask
+brew install cask
 
 echo "downloading programs with cask..."
 ./caskconfig.sh
