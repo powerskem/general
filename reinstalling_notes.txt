@@ -39,6 +39,10 @@
 #     https://turbotax.intuit.com/commerce/account/secure/downloads_unlocks.jsp
 #   - Google Drive
 #
+# * rsync backed up content
+#   rsync -rhavzP /Volumes/WD\ 500GB\ external\ HD/bkp/Documents/ Documents/
+#   rsync -rhavzP /Volumes/WD\ 500GB\ external\ HD/bkp/Downloads/ Downloads/
+#
 # * Install gcc?
 #   help: https://wiki.helsinki.fi/display/HUGG/GNU+compiler+install+on+older+versions+of+Mac+OS+X
 #
