@@ -33,6 +33,10 @@
 #
 #----------------------
 #
+# * Install apps:
+#   - firefox
+#   - Quicken Essentials
+#     https://turbotax.intuit.com/commerce/account/secure/downloads_unlocks.jsp
 # * Install gcc?
 #   help: https://wiki.helsinki.fi/display/HUGG/GNU+compiler+install+on+older+versions+of+Mac+OS+X
 #
