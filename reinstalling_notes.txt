@@ -13,14 +13,20 @@
 #
 #----------------------
 #
-# * Install the Xcode Command Line Tools
-#   From the Mac OS X Install CD, Xcode is available under "Optional Installs"
+# * Install OS X Mavericks (10.9)
 #
 # * Fix trackpad options in System Preferences
 #
-# * Upgrade to Mountain Lion??
+# * Install s/w updates
 #
-# * Install git from http://git-scm.com/download/mac
+#----------------------
+# * Install the command line developer tools
+#   (type "git status" on terminal window to get the prompt to install them)
+#
+#   Alternatively,
+#   - Install git from http://git-scm.com/download/mac
+#   - Install gcc?
+#     https://wiki.helsinki.fi/display/HUGG/GNU+compiler+install+on+older+versions+of+Mac+OS+X
 #
 # * Set git user-specific settings
 #   [Options set with the --global flag are stored in ~/.gitconfig]
@@ -28,10 +34,35 @@
 #   git config --global user.email <email>
 #   git config --global core.editor vim
 #
+# * Create public key
+#   ssh-keygen
+#   cat ~/.ssh/id_rsa.pub
+#
+# * Copy ssh key and add to git ssh-agent
+#   https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent
+#
+# * Create a personal access token on github
+#   https://github.com/settings/token/new?scopes=gist.public_repo&description=Homebrew
+#
+#   Copy the new token and set the token as:
+#   export HOMEBREW_GITHUB_API_TOKEN="the new token that you copied"
+#
+# * Clone git powerskem repo
+#
 # * Install Homebrew and Homebrew cask with
 #   ./caskinstall.sh
 #
 #----------------------
+#
+# * Install additional software
+#   - firefox
+#   - Quicken Essentials
+#     https://turbotax.intuit.com/commerce/account/secure/downloads_unlocks.jsp
+#   - Google Drive
+#
+# * rsync backed up content
+#   rsync -rhavzP /Volumes/WD\ 500GB\ external\ HD/bkp/Documents/ Documents/
+#   rsync -rhavzP /Volumes/WD\ 500GB\ external\ HD/bkp/Downloads/ Downloads/
 #
 # * Install gcc?
 #   help: https://wiki.helsinki.fi/display/HUGG/GNU+compiler+install+on+older+versions+of+Mac+OS+X
