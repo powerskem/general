@@ -48,6 +48,16 @@
 #   export HOMEBREW_GITHUB_API_TOKEN="the new token that you copied"
 #
 # * Clone git powerskem repo
+#   cd ~/
+#   git init
+#   git remote add origin git@github.com:powerskem/general.git
+#   git pull origin master
+#
+# * Convert line endings to mac as needed
+#   sed -i '' $'s/\r$//' *.sh
+#
+# * Convert line endings inside vim
+#   :set fileformat=unix
 #
 # * Install Homebrew and Homebrew cask with
 #   ./caskinstall.sh
