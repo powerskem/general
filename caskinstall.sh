@@ -17,5 +17,8 @@ brew install cask
 echo "downloading programs with cask..."
 ./caskconfig.sh
 
+echo "installing maven"
+brew install maven
+
 echo "done"
 
