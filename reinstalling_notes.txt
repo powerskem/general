@@ -64,6 +64,9 @@
 #
 #----------------------
 #
+# * Make changes for maven
+#   - add "<localRepository>/cygwin64/home/kpchase/maven_repo</localRepository>" to ~/.m2/settings.xml
+#
 # * Install additional software
 #   - firefox
 #   - Quicken Essentials
