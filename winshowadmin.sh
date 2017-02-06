@@ -4,7 +4,7 @@
 
 # make the cygwin terminal look different when running as administrator
 #
-# add "source .winshowadmin" to the .bashrc file when on cygwin
+# add "source winshowadmin.sh" to the .bashrc file when on cygwin
 
 # Set a white $ initially
 eStyle='\[\e[0m\]$'

@@ -27,7 +27,7 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
-source ~/.winshowadmin
+source ~/winshowadmin.sh
 
 # User dependent .bashrc file
 
