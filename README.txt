@@ -18,7 +18,7 @@ sudo apt-get install git
 
 # Before cloning project, create a public key.
 ssh-keygen
-cat ~/.ssh/id-rsa.pub
+cat ~/.ssh/id_rsa.pub
 
 # Add ssh key to git ssh-agent
 
