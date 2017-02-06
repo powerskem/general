@@ -3,11 +3,6 @@ Project: general
 By: Kathleen P Chase
 #####################
 
-# For new clone, save existing config files first.
-cd ~
-cp .bashrc orig.bashrc
-cp .profile orig.profile
-
 # Install ssh server for remote access
 ## ...on Linux
 sudo apt-get install openssh-server
@@ -27,3 +22,12 @@ cd ~/
 git init
 git remote add origin git@github.com:powerskem/general.git
 git pull origin master
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+git config --global push.default matching
+
+# ?? git branch --set-upstream-to=origin/master master
+
+git push --set-upstream origin master
