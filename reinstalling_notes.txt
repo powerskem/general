@@ -1,7 +1,29 @@
+#####################################
 #
 # powerskem
 #
-# For new MAC OSX Installs:
+# reinstalling_notes.txt
+#
+#####################################
+#
+# Linux
+#
+#
+#----------------------
+# CentOS
+# http://isoredirect.centos.org/centos/6/isos/i386/
+#
+# ip show addr
+#
+#----------------------
+# Ubuntu
+# http://releases.ubuntu.com/
+#
+# ifconfig
+#
+#####################################
+#
+# MAC OSX
 #
 # ** sudo command requires a non-blank admin password
 #
@@ -23,7 +45,8 @@
 # * Install the command line developer tools
 #   (type "git status" on terminal window to get the prompt to install them)
 #
-#   Alternatively,
+#####################################
+#
 #   - Install git from http://git-scm.com/download/mac
 #   - Install gcc?
 #     https://wiki.helsinki.fi/display/HUGG/GNU+compiler+install+on+older+versions+of+Mac+OS+X
