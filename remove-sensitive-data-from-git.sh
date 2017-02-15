@@ -269,10 +269,10 @@ for name_of_sensitive_file in "${args[@]}"; do
     cp ${name_of_sensitive_file} ${name_of_sensitive_file}.save
 
     info "Removing ${name_of_sensitive_file} from local git history..."
-    #git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch ${name_of_sensitive_file}' --prune-empty --tag-name-filter cat -- --all
+    git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch ${name_of_sensitive_file}' --prune-empty --tag-name-filter cat -- --all
 
     info "Pushing changes to git repo..."
-    #git push origin --force --all
+    git push origin --force --all
 done
 
 echo -e "\n\n"
