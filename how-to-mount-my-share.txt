@@ -1,17 +1,54 @@
-# HOW TO EASILY COPY FILES FROM A REMOTE WINDOWS SHARE:
+#
+# HOW TO EASILY COPY FILES FROM A REMOTE WINDOWS SHARE
+#
+# K P Chase
+#
+# ----------------------------------------------------
+#
+# target (mountpoint)
+# source (device)
 
 
-# ALREADY DID THIS
-#sudo yum install samba-client samba-common cifs-utils 
+# -----------
+# On the host:
+# -----------
+# In Oracle VM Virtualbox Manager, verify in settings 
+# which <network adapter name> is used to connect to the host.
 
-# CREATE A MOUNT POINT
-sudo mkdir /mnt/username
+# In cygwin terminal, determine ip address of host that the VM sees.
+    ipconfig | grep -A7 "<network adapter name> Network:" |grep IPv4
 
-# MOUNT THE SHARE USING THE CIFS UTIL
-sudo mount -t cifs xxx.xxx.x.xxx:/mount_to_remote /mnt/username -o user=username
+# Create a folder at C:\\<shared_dir_name>
 
-# SEE THE CONTENT
-ls /mnt/username 
+# Share new folder using Windows Explorer
+
+# Change folder properties (Sharing tab and Security tab)
+
+
+# ---------
+# On the VM:
+# ---------
+    su -        # do this all as root
+
+# Install packages on remote
+    yum list installed |grep samba
+    yum list installed |grep cifs
+    #OR...
+    #yum list installed samba
+    #yum list installed cifs
+
+    yum install samba-client samba-common cifs-utils 
+
+# Create a mount point
+    mkdir /mnt/<mount_dir>
+
+# Mount the share using the CIFS util
+# CAUTION: DO NOT CD TO THE MOUNT POINT BEFORE MOUNTING THE DEVICE
+mount -t cifs xxx.xxx.x.xxx//<shared_dir_name> /mnt/<mount_dir> -o user=<username>
+# Enter windows password for <username>
+
+# See the content of source on the mount point
+ls /mnt/<mount_dir> 
 
 # UNMOUNT WHEN DONE
-sudo umount /mnt/username 
+umount /mnt/<mount_dir> 
