@@ -84,7 +84,14 @@
 #
 # * Install Homebrew and Homebrew cask with
 #   ./caskinstall.sh
+#----------------------
 #
+# * Set up X11 - on remote (X11 client side)...
+#   echo "forwardX11 yes" >> ~/.ssh/config
+#
+# * Set up X11 - on local (X11 server side)...
+#   # xauth program must be installed on the server side
+#   # ensure ForwardX11Trusted yes in /etc/ssh/ssh_config
 #----------------------
 #
 # * Make changes for maven
