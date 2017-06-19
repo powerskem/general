@@ -92,6 +92,9 @@
 # * Set up X11 - on local (X11 server side)...
 #   # xauth program must be installed on the server side
 #   # ensure ForwardX11Trusted yes in /etc/ssh/ssh_config
+#
+# * Install Extra Packages for Enterprise Linux
+#   yum install epel-release
 #----------------------
 #
 # * Make changes for maven
