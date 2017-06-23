@@ -1,0 +1,53 @@
+
+                #################################################
+                # IN VM CONSOLE
+                #################################################
+                # get the dhcp-assigned (or static) ip from newvm
+                newvm$ ip addr sho | grep 192.168.
+                   inet 192.168.xxx.yyy/24 brd 192.168.xxx.255 scope global dynamic eth0
+
+                # create a .ssh dir on newvm
+                newvm$ ssh-keygen
+                   ...
+                #################################################
+
+# add newvm ip to /etc/hosts
+HOST_MACHINE$ sudo echo "192.168.xxx.yyy newvm" >> /etc/hosts
+
+# send a copy of your key to the vm
+HOST_MACHINE$ sftp newvm
+sftp> put ~/.ssh/id_rsa.pub .ssh/copy.of.host.key
+sftp> bye
+
+# save it in the authorized key list
+newvm$ cat .ssh/copy.of.host.key >> .ssh/authorized_keys
+
+# verify passwordless ssh
+HOST_MACHINE$ ssh newvm
+newvm$
+
+# set up X11 forwarding (server side)
+HOST_MACHINE$ grep X11 /etc/ssh/ssh_config
+   ForwardX11 yes
+   ForwardX11Trusted yes
+
+# set up X11 forwarding on newvm (client side)
+newvm$ grep X11 ~/.ssh/config
+newvm$ echo "forwardX11 yes" >> ~/.ssh/config
+newvm$ sudo yum -y install xauth
+newvm$ sudo yum -y install xterm
+
+# verify X11 forwarding
+HOST_MACHINE$ ssh -X newvm
+newvm$ xterm -ls -geometry 115x65 -sb -sl 1000 &
+
+# install and update apps
+newvm$ sudo yum -y update
+newvm$ sudo yum -y install wget
+newvm$ sudo yum -y install git
+
+
+#################################################
+# install extra packages for enterprise linux
+newvm$ sudo yum -y install epel-release
+
