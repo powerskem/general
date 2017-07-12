@@ -27,6 +27,7 @@ HOST_MACHINE$ ssh newvm
 newvm$
 
 # set up X11 forwarding (server side)
+HOST_MACHINE$ sudo apt install xorg openbox
 HOST_MACHINE$ grep X11 /etc/ssh/ssh_config
    ForwardX11 yes
    ForwardX11Trusted yes
@@ -41,13 +42,14 @@ newvm$ sudo yum -y install xterm
 HOST_MACHINE$ ssh -X newvm
 newvm$ xterm -ls -geometry 115x65 -sb -sl 1000 &
 
+
+#################################################
 # install and update apps
 newvm$ sudo yum -y update
 newvm$ sudo yum -y install wget
 newvm$ sudo yum -y install git
 
 
-#################################################
 # install extra packages for enterprise linux
 newvm$ sudo yum -y install epel-release
 
