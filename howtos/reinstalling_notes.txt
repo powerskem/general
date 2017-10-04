@@ -143,5 +143,9 @@ git init
 # R-3.4.1-win.exe
 # FileZilla_3.25.1_win64-setup_bundled.exe
 # dbeaver-ce-4.2.1-x86_64-setup.exe
+# Haroopad-v0.13.1-win-x64.msi
+# putty-64bit-0.70-installer.msi
+# 
+# ??? # pidenu45.msi
 # ??? # install-tl-windows.exe
 # 
