@@ -131,4 +131,17 @@ git init
 #.bashrc
 #.bash_aliases
 
-
+#----------------------
+# Windows 7 installed executables
+#----------------------
+# Xming-6-9-0-31-setup.exe
+# vcxsrv-64.1.19.2.0.installer.exe
+# X2GoClient_latest_mswin32-setup.exe
+# WinSCP-5.9.6-Setup.exe
+# VirtualBox-5.1.28-117968-Win.exe
+# rufus-2.16p.exe
+# R-3.4.1-win.exe
+# FileZilla_3.25.1_win64-setup_bundled.exe
+# dbeaver-ce-4.2.1-x86_64-setup.exe
+# ??? # install-tl-windows.exe
+# 
